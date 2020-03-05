@@ -69,7 +69,8 @@ public class MainActivity extends AppCompatActivity {
                 return true;
 
             case R.id.homeNotification:
-                Toast.makeText(this, "This is notification", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this,LogInActivity.class));
+                return true;
 
         }
         return super.onOptionsItemSelected(item);
